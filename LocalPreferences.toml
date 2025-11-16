@@ -1,0 +1,3 @@
+[DFTK]
+DFTK_threads = 1
+timer_enabled = false

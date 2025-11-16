@@ -1,0 +1,41 @@
+name = "SacerDOS"
+uuid = "019a8ea9-a302-7aed-b380-8e02460b3967"
+authors = ["https://arxiv.org/abs/2510.15369"]
+version = "0.1.0"
+
+[deps]
+DFTK = "acf6eb54-70d9-11e9-0013-234b7a5f5337"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+IterTools = "c8e1da08-722c-5040-9ed9-7db0dc04731e"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+LazyStack = "1fad7336-0346-5a1a-a56f-a06ba010965b"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+PaddedViews = "5432bcbf-9aad-5242-b902-cca2824c8663"
+PrecompileTools = "aea7be01-6a6a-4083-8856-8a6e6704d82a"
+Preferences = "21216c6a-2e73-6563-6e65-726566657250"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+PseudoPotentialData = "5751a51d-ac76-4487-a056-413ecf6fbe19"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+TestEnv = "1e6cf692-eddd-4d53-88a5-2d735e33781b"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+UnitfulAtomic = "a7773ee8-282e-5fa2-be4e-bd808c38a91a"
+
+[compat]
+Distributed = "1.11.0"
+IterTools = "1.10.0"
+PrecompileTools = "1.2.1"
+Preferences = "1.4.3"
+ProgressMeter = "1.10.4"
+PseudoPotentialData = "0.2.0"
+TestEnv = "1.101.1"
+
+[extras]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+TestItemRunner = "f8b46487-2199-4994-9208-9a1283c18c0a"
+
+[targets]
+test = ["Test", "TestItemRunner", "Dates", "JLD2"]
