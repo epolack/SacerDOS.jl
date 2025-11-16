@@ -1,0 +1,12 @@
+= SacerDOS.jl: Semiclassical Aperiodic Density of States
+
+Code companion for https://arxiv.org/abs/2510.15369[Numerical computation of the density of states of aperiodic multiscale
+Schrödinger operators] which computes the density of
+states of the semiclassical derivation.
+
+== Quick run
+
+[,sh]
+----
+julia --project -p 6 -e 'include("test/run.jl"); run_params(:huge; n_bands_diag=1); run_params(:huge; n_bands_diag=20)'
+----

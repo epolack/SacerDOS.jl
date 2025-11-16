@@ -1,0 +1,4 @@
+Manifest.toml
+.envrc
+
+/pluto/*backup*.jl
